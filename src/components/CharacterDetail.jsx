@@ -1,9 +1,9 @@
 function CharacterDetail({ character }) {
   return (
     <div className="w-full max-w-md mx-auto bg-white rounded-xl shadow-lg text-center min-h-[85vh] flex flex-col justify-center">
-      {/* Versión para responsive (estilo WhatsApp) */}
+
       <div className="md:hidden">
-        {/* Línea superior opaca */}
+
         <div className="border-t border-gray-300 opacity-50"></div>
 
         <div className="relative p-6">
@@ -17,7 +17,7 @@ function CharacterDetail({ character }) {
           </div>
         </div>
 
-        {/* Línea inferior opaca */}
+
         <div className="border-b border-gray-300 opacity-50"></div>
 
         <h2 className="text-2xl font-bold text-gray-900 mt-4">{character.name}</h2>
@@ -34,7 +34,7 @@ function CharacterDetail({ character }) {
         </div>
       </div>
 
-      {/* Versión para escritorio */}
+
       <div className="hidden md:block p-6">
         <div className="relative bg-purple-100 rounded-t-xl p-6">
           <img

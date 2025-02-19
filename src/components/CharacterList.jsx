@@ -59,37 +59,37 @@ function CharacterList({ onCharacterSelect }) {
     };
 
     const softDeleteCharacter = (charId) => {
-        setDeletedCharacters((prev) => [...prev, charId]); // Agrega el personaje a la lista de eliminados
+        setDeletedCharacters((prev) => [...prev, charId]);
     };
 
 
     return (
         <div className="p-4 bg-white">
-    <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2">
-    <input
-            type="text"
-            placeholder="Search character..."
-            className="flex-grow p-2 border border-purple-400 rounded-md"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-        />
-        <div className="flex space-x-2">
-        <button
-    onClick={() => setSearchTerm(search)}
-    className="p-2 bg-purple-500 text-white rounded-md flex items-center space-x-2"
->
-    <Search className="w-5 h-5" />
-    <span>Search</span>
-</button>
-<button
-    onClick={() => setShowFilters(!showFilters)}
-    className="p-2 bg-purple-500 text-white rounded-md flex items-center space-x-2 min-h-[42px]"
->
-    <Settings className="w-5 h-5" />
-    <span>Filters</span>
-</button>
-        </div>
-    </div>
+            <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2">
+                <input
+                    type="text"
+                    placeholder="Search character..."
+                    className="flex-grow p-2 border border-purple-400 rounded-md"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                />
+                <div className="flex space-x-2">
+                    <button
+                        onClick={() => setSearchTerm(search)}
+                        className="p-2 bg-purple-500 text-white rounded-md flex items-center space-x-2"
+                    >
+                        <Search className="w-5 h-5" />
+                        <span>Search</span>
+                    </button>
+                    <button
+                        onClick={() => setShowFilters(!showFilters)}
+                        className="p-2 bg-purple-500 text-white rounded-md flex items-center space-x-2 min-h-[42px]"
+                    >
+                        <Settings className="w-5 h-5" />
+                        <span>Filters</span>
+                    </button>
+                </div>
+            </div>
 
             {searchTerm && (
                 <p className="mt-2 text-purple-600 font-semibold">
@@ -145,8 +145,8 @@ function CharacterList({ onCharacterSelect }) {
                                     <button
                                         key={filter}
                                         className={`p-2 w-full text-center rounded-md transition ${tempGenderFilter === filter
-                                                ? "bg-purple-700 text-white"
-                                                : "bg-white border border-purple-400 text-purple-700 hover:bg-purple-600 hover:text-white"
+                                            ? "bg-purple-700 text-white"
+                                            : "bg-white border border-purple-400 text-purple-700 hover:bg-purple-600 hover:text-white"
                                             }`}
                                         onClick={() => setTempGenderFilter(filter)}
                                     >
@@ -163,8 +163,8 @@ function CharacterList({ onCharacterSelect }) {
                                     <button
                                         key={filter}
                                         className={`p-2 w-full text-center rounded-md transition ${tempStatusFilter === filter
-                                                ? "bg-purple-700 text-white"
-                                                : "bg-white border border-purple-400 text-purple-700 hover:bg-purple-600 hover:text-white"
+                                            ? "bg-purple-700 text-white"
+                                            : "bg-white border border-purple-400 text-purple-700 hover:bg-purple-600 hover:text-white"
                                             }`}
                                         onClick={() => setTempStatusFilter(filter)}
                                     >
@@ -222,7 +222,7 @@ function CharacterList({ onCharacterSelect }) {
                 Characters ({characters.length})
             </h2>
 
-            
+
             <div className="max-h-[700px] overflow-y-auto">
                 <div className="grid grid-cols-1 gap-4 mt-4">
                     {characters.map((char) => (
