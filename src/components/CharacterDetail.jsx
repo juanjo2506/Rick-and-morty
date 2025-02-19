@@ -23,13 +23,13 @@ function CharacterDetail({ character }) {
         <h2 className="text-2xl font-bold text-gray-900 mt-4">{character.name}</h2>
         <div className="mt-4 text-gray-700 text-lg space-y-2">
           <p>
-            <span className="font-semibold text-purple-600">Especie:</span> {character.species}
+            <span className="font-semibold text-purple-600">Specie:</span> {character.species}
           </p>
           <p>
-            <span className="font-semibold text-purple-600">Estado:</span> {character.status}
+            <span className="font-semibold text-purple-600">Status:</span> {character.status}
           </p>
           <p>
-            <span className="font-semibold text-purple-600">Género:</span> {character.gender || "Desconocido"}
+            <span className="font-semibold text-purple-600">Genre:</span> {character.gender || "Desconocido"}
           </p>
         </div>
       </div>
@@ -50,13 +50,13 @@ function CharacterDetail({ character }) {
         <h2 className="text-3xl font-bold text-gray-900 mt-4">{character.name}</h2>
         <div className="mt-4 text-gray-700 text-lg space-y-2">
           <p>
-            <span className="font-semibold text-purple-600">Especie:</span> {character.species}
+            <span className="font-semibold text-purple-600">Specie:</span> {character.species}
           </p>
           <p>
-            <span className="font-semibold text-purple-600">Estado:</span> {character.status}
+            <span className="font-semibold text-purple-600">Status:</span> {character.status}
           </p>
           <p>
-            <span className="font-semibold text-purple-600">Género:</span> {character.gender || "Desconocido"}
+            <span className="font-semibold text-purple-600">Genre:</span> {character.gender || "Desconocido"}
           </p>
         </div>
       </div>

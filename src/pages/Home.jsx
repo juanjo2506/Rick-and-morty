@@ -20,7 +20,7 @@ function Home() {
     <div className="flex flex-col md:flex-row h-screen">
       {/* Lista de personajes */}
       {!isMobile || !selectedCharacter ? (
-        <div className="w-full md:w-1/3 p-4 border-r border-gray-300">
+        <div className="w-full md:w-1/3 p-4 border-r border-gray-300 width">
           <CharacterList onCharacterSelect={setSelectedCharacter} />
         </div>
       ) : null}

@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    .character-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .character-buttons {
+        width: 52%;
+        position: relative !important;  /* Quita el absolute */
+        display: flex;
+        gap: 8px; /* Espacio entre botones */
+    }
+}
